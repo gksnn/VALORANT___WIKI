@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-family: "Audiowide", cursive;
+}
+
+/*Navbar CSS*/
+
+.navbar {
+  width: 100%;
+  background-image: linear-gradient(to right, #2a1925, #651830, #ff425c);
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 75px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.navlogo {
+  margin-left: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.navlogo > p {
+  font-family: "Audiowide", cursive;
+  font-size: 25px;
+  color: white;
+}
+
+.navList {
+  display: flex;
+  justify-content: space-between;
+  width: 30rem;
+  margin-right: 5rem;
+}
+
+li {
+  list-style: none;
+}
+
+ul > li > a {
+  text-decoration: none;
+  font-family: "Audiowide", cursive;
+  color: black;
+  font-size: 23px;
+  transition-duration: 1s;
+  cursor: pointer;
+}
+
+ul > li > a:hover {
+  color: white;
+  position: relative;
+  bottom: 5px;
+}
+
+/*Body*/
+.container {
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(to right, #2a1925, #651830, #ff425c);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.search-input {
+  display: flex;
+  margin: 5rem auto;
+}
+.searchbox {
+  outline: none;
+  border: 1px;
+  padding: 0.5rem;
+  width: 20rem;
+  border-radius: 10px;
+}
+.searchbox::placeholder {
+  font-family: "Audiowide", cursive;
+}
+
+
+
+.agent-container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  gap: 3rem;
+  justify-content: center;
+}
+
+.agentbox {
+  width: 300px;
+  height: 350px;
+  border: 1px solid white;
+  border-radius: 20px;
+  display: block;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.agentbox > img {
+  height: 70%;
+  width: 100%;
+}
+
+.agentbox > h1 {
+  font-family: "Audiowide", cursive;
+  color: white;
+  text-align: center;
+}
+
+.agentbox > button {
+  padding: 0.5rem;
+  border-radius: 10px;
+  margin: 10px auto;
+  border: 1px solid;
+  cursor: pointer;
+  font-family: "Audiowide", cursive;
+  display: flex;
+}
+
+.showdetails {
+  position: absolute;
+  width: 300px;
+  height: 250px;
+  border: 1px solid white;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  top: 0.01rem;
+  background: black;
+  opacity: 0.7;
+  flex-direction: column;
+  display: none;
+  left: 0.2px;
+}
+
+.showdetails > p {
+  text-align: center;
+  margin-top: 0.9rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: white;
+}
+
+.boxs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+  margin-top: 0.9rem;
+}
+
+.box1,
+.box2,
+.box3,
+.box4 {
+  height: 50px;
+  width: 50px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.box1 > img,
+.box2 > img,
+.box3 > img,
+.box4 > img {
+  height: 100%;
+  width: 100%;
+}
+
+.box1 > p,
+.box2 > p,
+.box3 > p,
+.box4 > p {
+  color: white;
+  font-size: 9px;
+  text-align: center;
+}
+
+.fa-xmark {
+  color: white;
+  position: relative;
+  left: 7rem;
+  top: 0.5rem;
+  cursor: pointer;
+  font-size: 20px;
+}
+

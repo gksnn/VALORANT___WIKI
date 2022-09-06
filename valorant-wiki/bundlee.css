@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-family: "Audiowide", cursive;
+}
+
+/*Navbar CSS*/
+
+.navbar {
+  width: 100%;
+  background-image: linear-gradient(to right, #ECC561, #605037, #A7DFBD);
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 75px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.navlogo {
+  margin-left: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.navlogo > p {
+  font-family: "Audiowide", cursive;
+  font-size: 25px;
+  color: white;
+}
+
+.navList {
+  display: flex;
+  justify-content: space-between;
+  width: 30rem;
+  margin-right: 5rem;
+}
+
+li {
+  list-style: none;
+}
+
+ul > li > a {
+  text-decoration: none;
+  font-family: "Audiowide", cursive;
+  color: black;
+  font-size: 23px;
+  transition-duration: 1s;
+  cursor: pointer;
+}
+
+ul > li > a:hover {
+  color: white;
+  position: relative;
+  bottom: 5px;
+}
+
+.bundlecontainer {
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(to right, #ECC561, #605037, #A7DFBD);
+
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.bundlecard {
+  width: 95%;
+  height: 400px;
+
+  margin: 1rem auto;
+  border-radius: 50px;
+}
+
+.bundlecard > img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50px;
+}
+
+.bundlecard > h1 {
+  color: white;
+  font-family: "Audiowide", cursive;
+  position: relative;
+  top: 23rem;
+  left: 2rem;
+  font-size: 3rem;
+}

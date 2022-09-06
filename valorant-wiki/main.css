@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-family: "Audiowide", cursive;
+}
+
+/*Navbar CSS*/
+
+.navbar {
+  width: 100%;
+  background: #fe4655;
+  border-bottom: 1px solid #fe4655;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 75px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.navlogo {
+  margin-left: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.navlogo > p {
+  font-family: "Audiowide", cursive;
+  font-size: 25px;
+  color: white;
+}
+
+.navList {
+  display: flex;
+  justify-content: space-between;
+  width: 30rem;
+  margin-right: 5rem;
+}
+
+li {
+  list-style: none;
+}
+
+ul > li > a {
+  text-decoration: none;
+  font-family: "Audiowide", cursive;
+  color: black;
+  font-size: 23px;
+  transition-duration: 1s;
+  cursor: pointer;
+}
+
+ul > li > a:hover {
+  color: white;
+  position: relative;
+  bottom: 5px;
+}
+
+/*Body Css*/
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  background-color: #0f1822;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vertical {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.horizontal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bodylogo {
+  display: flex;
+}
+
+.box1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  width: 120px;
+  height: 120px;
+  background: #fd4655;
+  border-radius: 50%;
+  position: relative;
+  animation-name: myanimation;
+  animation-duration: 40s;
+  animation-iteration-count: infinite;
+  left: 5rem;
+}
+
+@keyframes myanimation {
+  0% {
+    left: 100px;
+    top: 0px;
+  }
+  25% {
+    left: -185px;
+    top: 201px;
+  }
+  50% {
+    left: -450px;
+    top: 0px;
+  }
+  75% {
+    left: -185px;
+    top: -217px;
+  }
+  100% {
+    left: 100px;
+    top: 0px;
+  }
+}
+
+.box2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  width: 120px;
+  height: 120px;
+  background: #fd4655;
+  border-radius: 50%;
+  position: relative;
+  animation-name: myanimation2;
+  animation-duration: 40s;
+  animation-iteration-count: infinite;
+  right: 5rem;
+}
+
+@keyframes myanimation2 {
+  0% {
+    left: -100px;
+    top: 0px;
+  }
+  25% {
+    left: 185px;
+    top: -217px;
+  }
+  50% {
+    left: 450px;
+    top: 0px;
+  }
+  75% {
+    left: 185px;
+    top: 201px;
+  }
+  100% {
+    left: -100px;
+    top: 0px;
+  }
+}
+
+.box3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  width: 120px;
+  height: 120px;
+  background: #fd4655;
+  border-radius: 50%;
+  position: relative;
+  animation-name: myanimation3;
+  animation-duration: 40s;
+  animation-iteration-count: infinite;
+  bottom: 2rem;
+}
+
+@keyframes myanimation3 {
+  0% {
+    left: 0px;
+    top: -20px;
+  }
+  25% {
+    left: 265px;
+    top: 185px;
+  }
+  50% {
+    left: 0px;
+    top: 386px;
+  }
+  75% {
+    left: -265px;
+    top: 185px;
+  }
+  100% {
+    left: 0px;
+    top: -20px;
+  }
+}
+
+.box4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  width: 120px;
+  height: 120px;
+  background: #fd4655;
+  border-radius: 50%;
+  position: relative;
+  animation-name: myanimation4;
+  animation-duration: 40s;
+  animation-iteration-count: infinite;
+  top: 1rem;
+}
+
+@keyframes myanimation4 {
+  0% {
+    left: 0px;
+    top: 30px;
+  }
+  25% {
+    left: -265px;
+    top: -185px;
+  }
+  50% {
+    left: 0px;
+    top: -402px;
+  }
+  75% {
+    left: 265px;
+    top: -185px;
+  }
+  100% {
+    left: 0px;
+    top: 30px;
+  }
+}
+
+.box1 > a,
+.box2 > a,
+.box3 > a,
+.box4 > a {
+  color: white;
+}
+
+/* .box1:hover {
+  animation-play-state: paused;
+}
+.box2:hover {
+  animation-play-state: paused;
+}
+.box3:hover {
+  animation-play-state: paused;
+}
+.box4:hover {
+  animation-play-state: paused;
+}
+ */
